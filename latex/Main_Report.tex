@@ -1,0 +1,98 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+ \geometry{a4paper,total={170mm,257mm}, left=20mm, top=20mm}
+\usepackage[affil-it]{authblk}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{float}
+\graphicspath{ {./Images/} }
+
+%\usepackage{multirow,booktabs,setspace,caption}
+\usepackage{tikz}
+
+
+\begin{document}
+%\maketitle
+
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{center}%
+  	{\LARGE Master Thesis \par}
+  	\vskip 3em
+  	{\line(1,0){100} \par}
+  	\vskip 0.75em
+    {\LARGE \textbf{Empirical validation of the contrast avoidance model using social media sentiment analysis} \par}%
+    \vskip 3em%
+    {\large
+      \begin{tabular}[t]{c}%
+        Alex Hartmann
+      \end{tabular}\par}%
+     \vskip 0.75em
+		{\line(1,0){100} \par}
+      \vskip 10em%  
+    {\small Thesis submitted in partial fulfillment \\
+    of the requirements for the degree of \\ Master of Science
+    of Data Science for Decision Making \\ at the Department of Advanced Computing Sciences\\
+		of the Maastricht University \par}%
+      \vskip 3em%
+    {\normalsize \textbf{Thesis Committee:}\\
+	    \vskip .5em% 
+	    \begin{tabular}[t]{c}%
+	       Dr. Marijn ten Thij\\Christof Seiler
+      \end{tabular}\par}%	
+    	\vfill
+    {\small \begin{center} 
+      Maastricht University\\
+      Faculty of Science and Engineering\\
+      Department of Advanced Computing Sciences %\\
+%      Master \@department
+    \end{center} \par}%
+    \vskip 2.5em%
+    {\normalsize \today \par}%       % Set date in \large size.
+  \end{center}
+\end{titlepage}
+
+\setcounter{page}{1}
+
+\input{Sections/0_Abstract}
+
+
+
+%------------------------------------------------
+%	Sections
+%------------------------------------------------
+
+%\begin{multicols}{2}
+
+\input{Sections/1_Introduction}
+
+%\input{Sections/2_RelatedWorks}
+
+\input{Sections/3_Data}
+
+\input{Sections/4_Experiments}
+
+\input{Sections/5_Results}
+
+\input{Sections/6_Conclusions}
+
+\input{Sections/7_FutureWork}
+
+\input{Sections/8_Others}
+
+%\onecolumn
+\newpage
+\bibliographystyle{apalike}
+\bibliography{references}
+
+%\newpage
+
+
+%\begin{appendix}
+%    \setcounter{secnumdepth}{0}
+%    \input{Sections/9_Appendix}
+%\end{appendix}
+
+\end{document}
