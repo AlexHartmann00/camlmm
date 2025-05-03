@@ -143,11 +143,10 @@ where $y_{ij}$ is the response for subject $i$ at time $j$, $u_i \sim \mathcal{N
 
 This is what allows the model to deal with the aforementioned challenges of panel data. Specifically, including a random intercept allows the model to account for individual-specific deviations from the population average, thus better capturing the sentiment variations across users.
 
-Given the nature of the data and task at hand --- predicting user sentiment (VADER NA scores) over time based on covariates --- an LMM provides:
+Given the nature of the data and the task of predicting user sentiment (VADER NA scores) over time based on covariateg an LMM provides:
 \begin{itemize}
     \item A means of handling the hierarchical structure of the data (users, repeated observations).
-    \item The ability to partition variance into \textit{within-subject} (temporal changes) and \textit{between-subject} (user-level) components.
-    \item Robust handling of correlated observations and unobserved user heterogeneity, which are central concerns in this context.
+    \item Robust handling of correlated observations and unexplained differences in individual baseline outcome levels.
 \end{itemize}
 
 \subsubsection{Modeling and feature engineering}
